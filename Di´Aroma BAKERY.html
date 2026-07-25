@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Di'Aroma Bakery | Panadería Artesanal</title>
+  <meta name="description" content="Di'Aroma Bakery: panadería artesanal con pan y pastelería recién horneados cada día. Descubre nuestro menú, visítanos o pide por WhatsApp.">
+
+  <!-- Favicon (reemplazar por el ícono real en assets/favicon/) -->
+  <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+
+  <!-- Google Fonts: Fraunces (títulos), Manrope (texto), Caveat (acento manuscrito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos: el orden importa (ver README.md para la explicación) -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVEGACIÓN ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+
+      <a href="#inicio" class="brand" aria-label="Di'Aroma Bakery, ir al inicio">
+        <span class="brand__icon" aria-hidden="true">
+          <!-- Logo temporal en SVG. Sustituir por el logo real exportado del PDF -->
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="22" fill="var(--color-wheat)"/>
+            <path d="M14 28c0-7 4-14 10-14s10 7 10 14-4 8-10 8-10-1-10-8Z" fill="var(--color-oven)"/>
+            <path d="M18 22c1.5-3 3.5-5 6-5s4.5 2 6 5" stroke="var(--color-wheat)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">Di'Aroma <span class="brand__text--accent">Bakery</span></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <ul class="primary-nav__list">
+          <li><a href="#inicio" class="primary-nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="primary-nav__link">Nosotros</a></li>
+          <li><a href="#menu" class="primary-nav__link">Menú</a></li>
+          <li><a href="#proceso" class="primary-nav__link">Proceso</a></li>
+          <li><a href="#galeria" class="primary-nav__link">Galería</a></li>
+          <li><a href="#testimonios" class="primary-nav__link">Testimonios</a></li>
+          <li><a href="#contacto" class="primary-nav__link">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/593987508355" target="_blank" rel="noopener" class="btn btn--primary nav-cta">Pedir por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Horno de leña &middot; Ingredientes 100% naturales</p>
+          <h1 class="hero__title">El aroma que despierta tu barrio.</h1>
+          <p class="hero__subtitle">
+            En Di'Aroma Bakery amasamos y horneamos cada pieza a mano, todos los días,
+            para que tu mesa tenga siempre el sabor de lo recién hecho.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary">Ver nuestro menú</a>
+            <a href="#contacto" class="btn btn--ghost">Cómo llegar</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="stamp stamp--hero">
+            <span>Horneado</span>
+            <span>Fresco</span>
+            <span>Hoy</span>
+          </div>
+          <div class="hero__image-frame">
+            <!-- Reemplazar por: assets/img/hero/hero-croissants.jpg -->
+            <div class="img-placeholder img-placeholder--hero">🥐</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="about" id="nosotros">
+      <div class="container about__inner">
+        <div class="about__visual">
+          <!-- Reemplazar por una foto real del local o del equipo -->
+          <div class="img-placeholder img-placeholder--square">🍞</div>
+        </div>
+        <div class="about__content">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2 class="section-title">Pan de verdad, hecho con calma.</h2>
+          <p>
+            Di'Aroma Bakery nació de una receta familiar y de la idea simple de que el buen pan
+            necesita tiempo, no atajos. Fermentamos nuestras masas lentamente, seleccionamos
+            harinas de calidad y horneamos en tandas pequeñas para que cada producto salga
+            en su punto exacto.
+          </p>
+          <p>
+            Hoy seguimos ese mismo principio: menos ingredientes artificiales, más oficio,
+            y un mostrador que huele a recién horneado desde temprano.
+          </p>
+          <ul class="about__facts">
+            <li><strong>+8</strong> años horneando en el barrio</li>
+            <li><strong>100%</strong> masa madre y fermentación natural</li>
+            <li><strong>0</strong> conservantes artificiales</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENÚ / PRODUCTOS ============ -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-heading">
+  <p class="eyebrow">Panes de masa madre y especialidades</p>
+  <h2 class="section-title">Del horno a tu mesa</h2>
+  <p class="section-lead">Elaborados con fermentación natural y harinas seleccionadas, cada pieza es única.</p>
+</div>
+
+   <div class="menu-grid">
+
+  <!-- Producto 1: Pan de masa madre clásico -->
+  <article class="product-card">
+    <div class="product-card__image">
+      <img src="assets/img/productos/moldemasamadrePr1.jpg" alt="Pan de masa madre artesanal" class="img-cover">
+      
+    </div>
+    <h3 class="product-card__title">Pan de masa madre clásico</h3>
+    <p class="product-card__desc">Corteza crujiente, miga alveolada, fermentado 24 horas con nuestro cultivo propio.</p>
+    <p class="product-card__price">$1.65</p>
+  </article>
+
+  <!-- Producto 2: Pan de masa madre con semillas -->
+  <article class="product-card">
+    <div class="product-card__image">
+      <img src="assets/img/productos/masamadre-semillasPr2.jpg" alt="Pan de masa madre con semillas" class="img-cover">
+     
+    </div>
+    <h3 class="product-card__title">Pan de masa madre con semillas</h3>
+    <p class="product-card__desc">Masa madre con mezcla de semillas de girasol, lino y sésamo, horneado en piedra.</p>
+    <p class="product-card__price">$0.30</p>
+  </article>
+
+  <!-- Producto 3: Baguet de masa madre -->
+  <article class="product-card">
+    <div class="product-card__image">
+      <!-- Cambia baguet-masamadrePr3.jpg por el nombre real de tu foto -->
+      <img src="assets/img/productos/baguet-masamadrePr3.jpg" alt="Baguet de masa madre" class="img-cover">
+    </div>
+    <h3 class="product-card__title">Baguet de masa madre</h3>
+    <p class="product-card__desc">Formato alargado, corteza fina y crujiente, miga esponjosa con el característico sabor de la masa madre.</p>
+    <p class="product-card__price">$1.00</p>
+  </article>
+
+  <!-- Producto 4: Baguetín de masa madre -->
+  <article class="product-card">
+    <div class="product-card__image">
+      <!-- Cambia baguetin-masamadrePr4.jpg por el nombre real de tu foto -->
+      <img src="assets/img/productos/baguetin-masamadrePr4.jpg" alt="Baguetín de masa madre" class="img-cover">
+    </div>
+    <h3 class="product-card__title">Baguetín de masa madre</h3>
+    <p class="product-card__desc">Versión pequeña y tierna, perfecta para una porción individual o para acompañar ensaladas.</p>
+    <p class="product-card__price">$0.20</p>
+  </article>
+
+</div>
+
+        <div class="menu__cta">
+         <a href="https://wa.me/593987508355" target="_blank" rel="noopener" class="btn btn--primary">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO (secuencia real: sí amerita numeración) ============ -->
+    <section class="process" id="proceso">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <p class="eyebrow">Cómo lo hacemos</p>
+          <h2 class="section-title">De la harina al mostrador</h2>
+        </div>
+
+        <ol class="process-list">
+          <li class="process-step">
+            <span class="process-step__number">01</span>
+            <h3 class="process-step__title">Selección de ingredientes</h3>
+            <p>Elegimos harinas, mantequilla y frutas de proveedores locales de confianza.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-step__number">02</span>
+            <h3 class="process-step__title">Amasado artesanal</h3>
+            <p>Cada masa se trabaja a mano, respetando sus propios tiempos de fermentación.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-step__number">03</span>
+            <h3 class="process-step__title">Horneado en punto</h3>
+            <p>Horneamos en tandas pequeñas para asegurar corteza y miga perfectas.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-step__number">04</span>
+            <h3 class="process-step__title">Directo a tu mesa</h3>
+            <p>Servimos recién salido del horno, a lo largo de todo el día.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Un vistazo</p>
+          <h2 class="section-title">Nuestra galería</h2>
+        </div>
+
+      <div class="gallery-grid">
+  <div class="gallery-grid__item gallery-grid__item--tall">
+    <img src="assets/img/galeria/pan-de-canelaGal1.jpg" alt="Pan de canela recién horneado" class="img-cover">
+  </div>
+  <div class="gallery-grid__item">
+    <!-- assets/img/galeria/galeria-2.jpg -->
+    <div class="img-placeholder">🍰</div>
+  </div>
+  <div class="gallery-grid__item">
+    <!-- assets/img/galeria/galeria-3.jpg -->
+    <div class="img-placeholder">🥖</div>
+  </div>
+  <div class="gallery-grid__item">
+    <!-- assets/img/galeria/galeria-4.jpg -->
+    <div class="img-placeholder">🧁</div>
+  </div>
+  <div class="gallery-grid__item gallery-grid__item--wide">
+    <!-- assets/img/galeria/galeria-5.jpg -->
+    <div class="img-placeholder">🍞</div>
+  </div>
+</div>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Lo que dicen</p>
+          <h2 class="section-title">Nuestros clientes</h2>
+        </div>
+
+        <div class="testimonial-slider" id="testimonial-slider">
+          <div class="testimonial-slider__track" id="testimonial-track">
+            <blockquote class="testimonial-card">
+              <p>"El croissant más parecido a los que probé en Francia. Se nota el trabajo artesanal."</p>
+              <footer>— Valentina R.</footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p>"Compro el pan de masa madre cada sábado, dura toda la semana y siempre está fresco."</p>
+              <footer>— Andrés P.</footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p>"Pedir por WhatsApp fue súper fácil y llegó todo caliente, tal cual del horno."</p>
+              <footer>— Camila S.</footer>
+            </blockquote>
+          </div>
+          <div class="testimonial-slider__dots" id="testimonial-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <!-- ============ CONTACTO ============ -->
+<section class="contact" id="contacto">
+  <div class="container contact__inner">
+    <div class="contact__info">
+      <p class="eyebrow">Visítanos</p>
+      <h2 class="section-title">Te esperamos</h2>
+
+      <ul class="contact__list">
+        <li>
+          <strong>Dirección</strong>
+          <span>José Joaquín de Olmedo y Polit Lasso, dentro de Plaza Acuña</span>
+        </li>
+        <li>
+          <strong>Horario</strong>
+          <span>Todos los días: 7:00 a.m. – 9:00 p.m.</span>
+        </li>
+        <li>
+          <strong>Teléfono / WhatsApp</strong>
+          <span><a href="https://wa.me/593987508355" target="_blank" rel="noopener">+593 98 750 8355</a></span>
+        </li>
+        <li>
+          <strong>Correo</strong>
+          <span><a href="mailto:mateosebastian236236@gmail.com">mateosebastian236236@gmail.com</a></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact__form">
+      <h3 class="contact__form-title">Pide y Reserva</h3>
+
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+          <span class="form-error" data-error-for="name"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="form-error" data-error-for="email"></span>
+        </div>
+
+        <!-- Campo de teléfono con ejemplo NO real -->
+        <div class="form-field">
+          <label for="phone">Teléfono / WhatsApp</label>
+          <input type="tel" id="phone" name="phone" required minlength="10" maxlength="15" autocomplete="tel" placeholder="Ej. 099 123 4567">
+          <span class="form-error" data-error-for="phone"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+          <span class="form-error" data-error-for="message"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
+        <p class="form-success" id="form-success" hidden>¡Gracias! Tu mensaje fue enviado correctamente.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- MAPA (debajo del contenido) -->
+  <div class="container" style="margin-top: var(--space-5);">
+    <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.36036341099364!2d-78.47678357327075!3d-0.293944305378138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a3004db4791d%3A0x779cced0b046fb74!2sDiAroma!5e0!3m2!1ses!2sec!4v1784950752218!5m2!1ses!2sec" 
+        width="100%" 
+        height="400" 
+        style="border:0; display: block;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="brand__text">Di'Aroma <span class="brand__text--accent">Bakery</span></span>
+        <p>Horneado con calma, servido con orgullo.</p>
+      </div>
+
+      <nav class="site-footer__links" aria-label="Enlaces del pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="site-footer__social">
+        <a href="#" aria-label="Instagram de Di'Aroma Bakery">Instagram</a>
+        <a href="#" aria-label="Facebook de Di'Aroma Bakery">Facebook</a>
+      </div>
+    </div>
+    <p class="site-footer__copy">&copy; <span id="current-year"></span> Di'Aroma Bakery. Todos los derechos reservados.</p>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">&uarr;</button>
+
+  <!-- JavaScript: se carga al final con defer para no bloquear el renderizado -->
+  <script src="js/menu.js" defer></script>
+  <script src="js/scrollAnimations.js" defer></script>
+  <script src="js/testimonials.js" defer></script>
+  <script src="js/formValidation.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

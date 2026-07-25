@@ -1,0 +1,51 @@
+/* ==========================================================================
+   ANIMATIONS.CSS
+   Animaciones deliberadas y puntuales: el "sello" apareciendo como si
+   se acabara de presionar sobre papel, y una revelación suave de cada
+   sección al hacer scroll. Se evita el exceso de movimiento.
+   ========================================================================== */
+
+/* Sello del hero: entra como si se "presionara" sobre el papel */
+@keyframes stampPress {
+  0% {
+    opacity: 0;
+    transform: rotate(-8deg) scale(1.6);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(-8deg) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-8deg) scale(1);
+  }
+}
+
+.stamp--hero {
+  animation: stampPress 700ms ease-out 400ms both;
+}
+
+/* Elementos que se revelan suavemente al entrar en el viewport.
+   La clase .is-visible la agrega js/scrollAnimations.js mediante un
+   IntersectionObserver. */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp--hero {
+    animation: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

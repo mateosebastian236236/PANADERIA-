@@ -1,0 +1,6 @@
+Coloca aquí 5 fotos para la sección de galería, nombradas:
+galeria-1.jpg
+galeria-2.jpg
+galeria-3.jpg
+galeria-4.jpg
+galeria-5.jpg

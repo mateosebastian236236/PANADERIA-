@@ -1,0 +1,135 @@
+/* ==========================================================================
+   RESPONSIVE.CSS
+   Todo el CSS anterior está pensado para móvil (mobile-first). Aquí
+   "progresamos" el diseño para pantallas más grandes usando
+   min-width. Este archivo se carga al final para que sus reglas
+   tengan prioridad de orden sobre las reglas base en tablet/escritorio.
+
+   Breakpoints usados:
+   - 768px  -> tablets
+   - 1024px -> escritorio
+   ========================================================================== */
+
+/* ============ TABLET (>= 768px) ============ */
+@media (min-width: 768px) {
+
+  :root {
+    --text-2xl: 3.25rem;
+    --text-3xl: 4rem;
+  }
+
+  /* --- Navegación: se muestra horizontal, se oculta la hamburguesa --- */
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-nav {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: none;
+    transform: none;
+    gap: var(--space-5);
+  }
+
+  .primary-nav__list {
+    flex-direction: row;
+    gap: var(--space-4);
+  }
+
+  .primary-nav__link {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+  }
+
+  /* --- Hero: dos columnas --- */
+  .hero__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero__content,
+  .hero__visual {
+    flex: 1;
+  }
+
+  /* --- Nosotros: dos columnas --- */
+  .about__inner {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-7);
+  }
+
+  .about__visual,
+  .about__content {
+    flex: 1;
+  }
+
+  /* --- Menú: 2 columnas --- */
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- Proceso: 4 columnas en fila --- */
+  .process-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .process-step {
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 0;
+    padding-left: var(--space-3);
+  }
+
+  /* --- Contacto: dos columnas --- */
+  .contact__inner {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact__info,
+  .contact__form {
+    flex: 1;
+  }
+
+  /* --- Footer: elementos en fila --- */
+  .site-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+/* ============ ESCRITORIO (>= 1024px) ============ */
+@media (min-width: 1024px) {
+
+  .container {
+    --container-padding: var(--space-5);
+  }
+
+  /* --- Menú: 4 columnas --- */
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* --- Galería: grid más rico en escritorio --- */
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  /* --- Testimonios: se ven 1 tarjeta centrada pero con más aire --- */
+  .testimonial-card {
+    padding: var(--space-6);
+  }
+
+  .hero__title {
+    font-size: var(--text-3xl);
+  }
+}

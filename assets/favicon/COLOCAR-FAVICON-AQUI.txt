@@ -1,0 +1,3 @@
+Coloca aquí el favicon (el ícono pequeño que aparece en la pestaña del navegador).
+Puedes generarlo gratis desde tu logo en https://favicon.io/favicon-converter/
+Nómbralo: favicon.png

@@ -1,0 +1,9 @@
+Coloca aquí el logo oficial de Di'\''Aroma Bakery ya exportado en formato web:
+- logo.svg (ideal, se ve nítido en cualquier tamaño)
+- logo.png (alternativa, fondo transparente, al menos 400px de ancho)
+
+Cómo exportarlo desde tu PDF:
+1. Abre 'DI AROMA 2024 LOGO pdf.pdf' en Illustrator, Photoshop o incluso Vista Previa/Acrobat.
+2. Expórtalo como PNG con fondo transparente (o como SVG si el PDF es vectorial).
+3. Nómbralo 'logo.png' o 'logo.svg' y colócalo en esta carpeta.
+4. Reemplaza el SVG temporal en index.html (busca el comentario 'Logo temporal en SVG') por: <img src="assets/img/logo/logo.png" alt="Logo de Di'\''Aroma Bakery" class="brand__icon">

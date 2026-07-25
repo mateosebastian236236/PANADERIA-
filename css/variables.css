@@ -1,0 +1,69 @@
+/* ==========================================================================
+   VARIABLES.CSS
+   Aquí vive el "sistema de diseño" completo de la página: colores,
+   tipografías, espaciados, bordes y sombras. Si mañana la panadería
+   quiere cambiar su paleta o su fuente, este es el ÚNICO archivo que
+   hay que tocar; el resto de los estilos consumen estas variables.
+   ========================================================================== */
+
+:root {
+  /* ---------- COLOR: inspirado en el horno de leña y el trigo dorado ---------- */
+  --color-oven: #2B1810;         /* marrón carbón de horno: header, footer, textos oscuros */
+  --color-oven-light: #3D2418;   /* variante más clara para degradados y hover */
+  --color-crust: #8C4A2F;        /* costra tostada: botones secundarios, bordes */
+  --color-wheat: #D9A544;        /* trigo dorado: color principal de marca / CTA */
+  --color-wheat-light: #E8C374;  /* trigo claro: hover de botones y acentos */
+  --color-canela: #B5541F;       /* canela: etiquetas, sellos, detalles cálidos */
+  --color-crema: #FBF3E4;        /* crema de harina: fondo principal de la página */
+  --color-crema-dark: #F2E4CC;   /* crema oscuro: tarjetas, bordes suaves */
+  --color-masa: #3A2A1E;         /* marrón masa: color de texto principal */
+  --color-white: #FFFDF9;
+
+  /* ---------- TIPOGRAFÍA ---------- */
+  --font-display: 'Fraunces', 'Georgia', serif;   /* títulos: serif cálida y artesanal */
+  --font-body: 'Manrope', 'Segoe UI', sans-serif; /* texto: sans-serif limpia y legible */
+  --font-accent: 'Caveat', cursive;               /* acentos manuscritos puntuales */
+
+  --text-xs: 0.8125rem;   /* 13px */
+  --text-sm: 0.9375rem;   /* 15px */
+  --text-base: 1rem;      /* 16px */
+  --text-md: 1.125rem;    /* 18px */
+  --text-lg: 1.5rem;      /* 24px */
+  --text-xl: 2rem;        /* 32px */
+  --text-2xl: 2.75rem;    /* 44px */
+  --text-3xl: 3.5rem;     /* 56px */
+
+  /* ---------- ESPACIADO (escala de 8px) ---------- */
+  --space-1: 0.5rem;   /* 8px  */
+  --space-2: 0.75rem;  /* 12px */
+  --space-3: 1rem;     /* 16px */
+  --space-4: 1.5rem;   /* 24px */
+  --space-5: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-7: 4rem;     /* 64px */
+  --space-8: 6rem;     /* 96px */
+
+  /* ---------- BORDES Y SOMBRAS ---------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(43, 24, 16, 0.08);
+  --shadow-md: 0 8px 24px rgba(43, 24, 16, 0.14);
+  --shadow-lg: 0 16px 40px rgba(43, 24, 16, 0.20);
+
+  /* ---------- LAYOUT ---------- */
+  --container-max: 1180px;
+  --container-padding: var(--space-3);
+
+  /* ---------- TRANSICIONES ---------- */
+  --transition-fast: 150ms ease;
+  --transition-base: 280ms ease;
+  --transition-slow: 500ms ease;
+
+  /* ---------- CAPAS (z-index) ---------- */
+  --z-header: 100;
+  --z-back-to-top: 90;
+  --z-overlay: 200;
+}

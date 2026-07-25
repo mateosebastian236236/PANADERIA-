@@ -1,0 +1,17 @@
+# Archivos y carpetas que Git NO debe subir al repositorio
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Carpetas de configuración de editores
+.vscode/
+*.code-workspace
+
+# Dependencias (si en el futuro se agrega Node.js, Sass, etc.)
+node_modules/
+
+# Archivos temporales
+*.log
+*.tmp

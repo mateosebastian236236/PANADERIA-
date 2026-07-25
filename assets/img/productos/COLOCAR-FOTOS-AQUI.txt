@@ -1,0 +1,7 @@
+Coloca aquí las fotografías reales de tus productos, con estos nombres exactos para que coincidan con el HTML:
+- croissants.jpg
+- pan-masa-madre.jpg
+- pan-dulce.jpg (baguette)
+- cupcakes.jpg (muffins)
+
+Recomendación: usa fotos horizontales (1200x900px aprox.), buena luz natural, fondo simple. Comprímelas en https://squoosh.app antes de subirlas para que la página cargue rápido.

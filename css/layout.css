@@ -1,0 +1,167 @@
+/* ==========================================================================
+   LAYOUT.CSS
+   Estructura general de la página: header pegajoso (sticky), menú
+   hamburguesa para móvil y footer. Mobile-first: los estilos base son
+   para pantallas pequeñas; los breakpoints grandes están en
+   responsive.css.
+   ========================================================================== */
+
+/* ---------- HEADER ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background-color: var(--color-oven);
+  transition: box-shadow var(--transition-base), padding var(--transition-base);
+}
+
+.site-header.is-scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.brand__text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-md);
+  color: var(--color-white);
+}
+
+.brand__text--accent {
+  color: var(--color-wheat);
+}
+
+/* ---------- BOTÓN HAMBURGUESA (solo visible en móvil) ---------- */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: var(--space-1);
+  z-index: var(--z-overlay);
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+/* Animación de hamburguesa a "X" cuando el menú está abierto */
+.nav-toggle.is-active .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.is-active .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.is-active .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---------- NAVEGACIÓN PRINCIPAL (mobile-first: panel a pantalla completa) ---------- */
+.primary-nav {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  background-color: var(--color-oven);
+  transform: translateX(100%);
+  transition: transform var(--transition-slow);
+}
+
+.primary-nav.is-open {
+  transform: translateX(0);
+}
+
+.primary-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.primary-nav__link {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-white);
+}
+
+.primary-nav__link:hover {
+  color: var(--color-wheat);
+}
+
+.nav-cta {
+  display: none; /* En móvil el CTA principal ya está en el hero; se muestra en escritorio */
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background-color: var(--color-oven);
+  color: var(--color-crema);
+  padding-block: var(--space-6) var(--space-4);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-footer__brand .brand__text {
+  font-size: var(--text-lg);
+}
+
+.site-footer__brand p {
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+  opacity: 0.75;
+}
+
+.site-footer__links,
+.site-footer__social {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.site-footer__links a,
+.site-footer__social a {
+  font-size: var(--text-sm);
+  opacity: 0.85;
+}
+
+.site-footer__links a:hover,
+.site-footer__social a:hover {
+  opacity: 1;
+  color: var(--color-wheat);
+}
+
+.site-footer__copy {
+  margin-top: var(--space-4);
+  text-align: center;
+  font-size: var(--text-xs);
+  opacity: 0.6;
+}

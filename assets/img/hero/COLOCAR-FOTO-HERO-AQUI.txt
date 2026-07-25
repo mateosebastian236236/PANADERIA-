@@ -1,0 +1,4 @@
+Coloca aquí la foto principal del hero (la primera imagen grande que ve el visitante), por ejemplo la foto de los croissants que mencionaste (WhatsApp Image...).
+
+Nombre sugerido: hero-croissants.jpg
+Tamaño recomendado: 1600x1200px, buena resolución pero comprimida (usa https://squoosh.app).

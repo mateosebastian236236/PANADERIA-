@@ -1,0 +1,255 @@
+/* ==========================================================================
+   SECTIONS.CSS
+   Estilos específicos de cada sección del index.html. Todo está escrito
+   mobile-first: una sola columna por defecto, y se convierte en
+   varias columnas a partir de los breakpoints en responsive.css.
+   ========================================================================== */
+
+section {
+  padding-block: var(--space-7);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(160deg, var(--color-oven) 0%, var(--color-oven-light) 55%, var(--color-crust) 100%);
+  color: var(--color-white);
+  padding-block: var(--space-8) var(--space-7);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-6);
+}
+
+.hero__title {
+  color: var(--color-white);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+}
+
+.hero__subtitle {
+  font-size: var(--text-md);
+  opacity: 0.85;
+  margin-bottom: var(--space-5);
+  max-width: 46ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.hero .btn--ghost {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.hero .btn--ghost:hover {
+  background-color: var(--color-white);
+  color: var(--color-oven);
+}
+
+.hero__visual {
+  position: relative;
+}
+
+.hero__image-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---------- NOSOTROS ---------- */
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.about__facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  text-align: center;
+}
+
+.about__facts strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-canela);
+}
+
+.about__facts li {
+  font-size: var(--text-xs);
+}
+
+/* ---------- MENÚ / PRODUCTOS ---------- */
+.menu {
+  background-color: var(--color-crema-dark);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.menu__cta {
+  text-align: center;
+  margin-top: var(--space-6);
+}
+
+/* ---------- PROCESO ---------- */
+.process {
+  background-color: var(--color-oven);
+  color: var(--color-crema);
+}
+
+.process-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.process-step {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: var(--space-3);
+}
+
+.process-step__number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-wheat);
+  margin-bottom: var(--space-1);
+}
+
+.process-step__title {
+  color: var(--color-crema);
+  font-size: var(--text-md);
+  margin-bottom: var(--space-1);
+}
+
+.process-step p {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}
+
+/* ---------- GALERÍA ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 160px;
+  gap: var(--space-2);
+}
+
+.gallery-grid__item {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.gallery-grid__item--tall {
+  grid-row: span 2;
+}
+
+.gallery-grid__item--wide {
+  grid-column: span 2;
+}
+
+.gallery-grid__item .img-placeholder {
+  min-height: 100%;
+  border-radius: 0;
+}
+
+/* ---------- TESTIMONIOS ---------- */
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slider__track {
+  display: flex;
+  transition: transform var(--transition-slow);
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card p {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-style: italic;
+  max-width: none;
+  margin-bottom: var(--space-3);
+}
+
+.testimonial-card footer {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-canela);
+}
+
+.testimonial-slider__dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-top: var(--space-4);
+}
+
+.testimonial-slider__dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-crema-dark);
+  transition: background-color var(--transition-fast);
+}
+
+.testimonial-slider__dots button.is-active {
+  background-color: var(--color-canela);
+}
+
+/* ---------- CONTACTO ---------- */
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.contact__list strong {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-canela);
+  margin-bottom: 2px;
+}
+
+.contact__list a:hover {
+  color: var(--color-canela);
+}
+
+.contact__form {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact__form-title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-4);
+}
