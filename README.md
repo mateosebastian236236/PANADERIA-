@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Di'Aroma Bakery — Sitio Web
 
 Sitio web mobile-first para Di'Aroma Bakery, construido con HTML5 semántico,
@@ -73,3 +74,7 @@ git push
 - Registrar un dominio propio (ej. diaromabakery.com) y publicar el
   sitio en un hosting (Netlify, Vercel o GitHub Pages son gratuitos
   para sitios estáticos como este).
+=======
+# PANADERIA-
+panaderia pagina WEb
+>>>>>>> 69f265db3482b129019e8d02b6ebd9c2813c2332
